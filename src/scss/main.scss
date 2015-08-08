@@ -1,0 +1,611 @@
+
+@import "./foundation/settings";
+@import "./foundation/functions";
+@import "./foundation/components/buttons";
+@import "juice";
+
+
+/* ------------------------------------
+=========================================
+LandX - Responsive Landing Page
+Version: 1.0.0 (Initial Release)
+Designed By: Mentor Kadriu
+=========================================
+-----------------------------------------*/
+
+
+/*==============================
+=            GLOBAL            =
+==============================*/
+
+// Color
+
+$blue : #0199e5;
+
+
+/* .full-row - makes a div full width and removes padding anr margin */
+
+.full-row {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0; 
+}
+
+.full-block {
+  float: left;
+  display:block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* .full-padding adds padding-top and padding-bottom to divs */
+
+.full-padding {
+  padding: rem-calc(100) 0;
+}
+
+/* .full-gray adds gray backgorund color to divs */
+
+.full-gray {
+  background-color: #f7f8fa;
+}
+
+/* BUTTONS  */
+.button-one {
+  @include button(
+    $padding: rem-calc(17), 
+    $bg: #fff, 
+    $radius: null, 
+    $full-width: false, 
+    $disabled: false, 
+    $is-prefix: false, 
+    $bg-hover: null, 
+    $border-color: $jet, 
+    $transition: true
+    );
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid $jet;
+  &.radius {
+    border-radius: 4px;
+  }
+  i {
+    padding-left: 10px;
+  }
+  &.expanded {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.button-two {
+  @include button(
+    $padding:rem-calc(17), 
+    $bg:$blue, 
+    $radius:null, 
+    $full-width:false, 
+    $disabled:false, 
+    $is-prefix:false, 
+    $bg-hover:null, 
+    $border-color:$blue, 
+    $transition: true
+    );
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  &.radius {
+    border-radius: 4px;
+  }
+  i {
+    padding-left: 10px;
+  }
+  &.expanded {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+
+.headroom {
+    opacity: 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+
+.headroom--unpinned {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.headroom--pinned {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.headroom--fixed {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+}
+
+/*-----  End of GLOBAL  ------*/
+
+/*==============================
+=            HEADER            =
+==============================*/
+
+#header {
+  background: url(../images/bg.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#nav-logo {
+  height: 65px;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+.color-hover {
+  background-color: rgba(0,0,0,.7);
+}
+
+#top-header {
+  padding-top: rem-calc(50);
+}
+#logo {
+  margin-bottom: 1rem;
+  @media #{$medium-up}{
+    margin-bottom: 0;
+  }
+}
+
+.top-bar.expanded .right li {
+  text-align: center;
+}
+
+ul#social-icons {
+  margin: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 0 3px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    a {
+      color: #fff;
+      font-size: 26px;
+    }
+  }
+}
+
+#bottom-header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  @media #{$medium-up} {
+    padding-top: rem-calc(165);
+    padding-bottom: rem-calc(165);
+  }
+  h1 {
+    color: $white;
+  }
+  span {
+    color: $blue;
+    font-weight: bold;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.form-bg {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 7px;
+  padding: 25px;
+  padding-bottom: 10px;
+}
+
+/*-----  End of HEADER  ------*/
+
+/*===========================================
+=            EXPLORE  and DESCRIBE          =
+============================================*/
+
+.box-ed-image {
+  position: relative;
+}
+.box-ed {
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.box-ed-header {
+  font-size: rem-calc(35);
+}
+
+.box-ed-tiny-line {
+  width: 69px;
+  height: 2px;
+  background-color: $blue;
+  margin-bottom: rem-calc(32);
+} 
+
+.box-ed-s-header {
+  font-size: 1rem;
+  line-height: rem-calc(25);
+  margin-bottom: rem-calc(45);
+}
+
+.box-ed-icon {
+  position: relative;
+  display: block;
+  width: 32px;
+height: 32px;
+line-height: 35px;
+text-align: center;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+background-color: #0199e5;
+  color: #fff;
+}
+
+.box-ed-ss-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/*-----  End of EXPLORE  and DESCRIBE ------*/
+
+
+/*================================
+=            FEATURES            =
+================================*/
+
+
+.f-header {
+
+}
+
+.f-tiny-line {
+  @extend .box-ed-tiny-line;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.f-box {
+  margin-top: rem-calc(40);
+  margin-bottom: rem-calc(40);
+}
+
+.f-icon {
+  color: $blue;
+  font-size: rem-calc(52);
+  line-height: 1;
+  margin-bottom: rem-calc(35);
+}
+
+.f-sub-header {
+  font-weight: 500;
+  font-size: rem-calc(20);
+}
+
+.f-box p {
+  font-size: rem-calc(16);
+}
+
+/*-----  End of FEATURES  ------*/
+/*===============================
+=            PRICING            =
+===============================*/
+
+.black {
+  header {
+    background-color: $jet;
+    span {
+      color: $blue;
+    }
+  }
+}
+.blue {
+  header {
+    background-color: $blue;
+    span {
+      color: $white;
+    }
+  }
+}
+
+.pricing {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  margin-top: rem-calc(60);
+}
+.p-header {
+  padding: rem-calc(25);
+  h3 {
+      color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    }
+    p {
+      color: #fff;
+      margin-bottom: 0;
+      span {
+        font-weight: 700;
+      }
+    } 
+}
+.p-list {
+    list-style: none;
+    margin: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    li {
+      border-bottom: 1px dotted #e3e3e3;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px;
+      p {
+        margin-bottom: 0;
+        height: rem-calc(50);
+      line-height: rem-calc(50);
+      }
+      span {
+        text-align: center;
+        height: rem-calc(50);
+      line-height: rem-calc(50);
+
+      }
+    }
+    .p-small-10 {
+      width: 80%;
+      display: block;
+      float: left;
+    }
+    .p-small-2 {
+      width: 20%;
+      display: block;
+      float: left;
+      text-align: center;
+    }
+  }
+
+.p-footer {
+  float: left;
+  width: 100%;
+  padding: 30px 25px;
+  p {
+    color: $jet;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+  .p-small-7 {
+    width: 60%;
+    display: block;
+    float: left;
+  }
+  .p-small-5 {
+    width: 40%;
+    display: block;
+    float: left;
+  }
+}
+
+
+/*-----  End of PRICING  ------*/
+
+/*=============================
+=            VIDEO            =
+=============================*/
+
+.video-feature {
+  font-size: rem-calc(18);
+  font-weight: 700;
+  i {
+    color: $blue;
+    padding-right: 10px;
+  }
+}
+
+/*-----  End of VIDEO  ------*/
+
+
+/*===============================
+=            PRODUCT            =
+===============================*/
+
+
+.slide {
+margin: 10px;
+border-radius: 3px;
+border: 5px solid #ffffff;
+}
+
+/*-----  End of PRODUCT  ------*/
+
+/*===============================
+=            TRUSTED            =
+===============================*/
+
+#trusted-logo {
+  display: block;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+    display: inline-block;
+    margin: 15px;
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.tc-author{
+  position: relative;
+  margin-top: 30px;
+  .tc-photo {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin: auto;
+    position: relative;
+    margin-bottom: -24px;
+    z-index: 100;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 0px 3px #f7f8fa;
+    background-color: $blue;
+    text-align: center;
+    img {
+      max-width: 100%;
+      }
+    i {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+  .tc-box {
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    position: relative;
+    background: #f7f8fa;
+    padding-top: 20px;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 0.75);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 0.75);
+    box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 0.75);
+  .tc-message {
+    padding: 25px;
+    font-style: italic;
+    text-align: center;
+    }
+    @include triangle(down, 15px, #f7f8fa, true, before) {
+    background-color: #fff;
+  }
+  }
+  .tc-data {
+    margin-top: rem-calc(30);
+    text-align: center;
+    .tc-name {
+      font-weight: 700;
+      color: $blue;
+      font-size: rem-calc(18);
+    }
+    .tc-company {
+      font-size: rem-calc(13);
+      color: $smoke;
+    }
+  }
+}
+
+
+/*-----  End of TRUSTED  ------*/
+
+/*=================================
+=            START NOW            =
+=================================*/
+
+#start-now {
+  background: url(../images/bg2.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#sn-small-header {
+  font-size: rem-calc(20);
+  font-weight: bold;
+  color: #fff;
+}
+
+#sn-big-header {
+  font-size: rem-calc(35);
+  font-weight: bold;
+  margin-top: rem-calc(20);
+  color: #fff;
+}
+
+/*-----  End of START NOW  ------*/
+
+/*================================
+=            QUESTION            =
+================================*/
+
+.q-header {
+  font-size: rem-calc(24);
+  color: $black;
+  font-weight: 700;
+}
+
+.q-contact {
+  color: $blue;
+  font-weight: 700;
+  text-transform: uppercase;
+  i {
+    padding-right: 10px;
+  }
+}
+
+/*-----  End of QUESTION  ------*/
+
+/*==============================
+=            FOOTER            =
+==============================*/
+
+
+#f-logo {
+  margin-bottom: rem-calc(25);
+}
+
+.f-rights {
+  font-size: rem-calc(16);
+  color: $smoke;
+}
+
+
+#bottom-social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    padding-right: 5px;
+    a {
+      font-size: rem-calc(25);
+      color: $smoke;
+    }
+  }
+}
+
+/*-----  End of FOOTER  ------*/
+

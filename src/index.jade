@@ -1,0 +1,492 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title LandX - Responsive, semantic, simple landing page
+    meta(name="author", content="Mentor Kadriu")
+    meta(name='description', content='LandX - Responsive, semantic, simple landing page')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel="icon" type="image/png" href="images/favicon_16X16.png")
+    link(rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png")
+    link(href='http://fonts.googleapis.com/css?family=Raleway:700,500,400,300', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/foundation.css")
+    link(rel="stylesheet", href="css/owl.carousel.css")
+    link(rel="stylesheet", href="css/owl.theme.css")
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/elegant-icons.css")
+    // [if lte IE 7]><script src="scripts/lte-ie7.js"></script><![endif]
+    script( src="js/modernizr.custom.67028.js")
+  body
+    // Start Header
+    #headroom.headroom--fixed.contain-to-grid
+      nav(class="top-bar", data-topbar, role="navigation")
+        ul.title-area
+          li#nav-logo
+            a(href="index.html")
+              img(src="images/logo-dark.png", alt="Logo dark")
+          li.toggle-topbar.menu-icon
+            a(href="#")
+              span Menu
+        section.top-bar-section
+          ul.right
+            li.active
+              a(href="#header", data-scroll) Home
+            li
+              a(href="#explore", data-scroll) Explore
+            li
+              a(href="#features", data-scroll) Features
+            li
+              a(href="#pricing", data-scroll) Pricing
+            li
+              a(href="#video", data-scroll) Showcase
+            li
+              a(href="#trusted", data-scroll) Testimonials
+    header.full-row#header
+      .color-hover.full-block
+        .row#top-header
+          .small-12.medium-6.large-6.columns.small-only-text-center.medium-text-left
+            #logo.full-block
+              img(src="images/logo.png", alt="Logo")
+            // #logo
+          .small-12.medium-6.large-6.columns
+            ul#social-icons.full-block.small-only-text-center.medium-text-right
+              li
+                a(href="#")
+                  i.social_facebook_circle
+              li
+                a(href="#")
+                  i.social_twitter_circle
+              li
+                a(href="#")
+                  i.social_linkedin_circle
+            // #social-icons
+        .row#bottom-header
+          .small-12.medium-12.large-11.large-offset-1.columns.text-center
+            h1 Get the Best 
+              span Solution 
+              | for Your 
+              strong Business
+            p Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral landing page user base.
+          .small-12.large-12.columns
+            form(id="from", method="", action="").form-bg
+              .row
+                .small-12.medium-3.large-3.columns
+                  input(type="text", placeholder="Your Name").radius
+                .small-12.medium-3.large-3.columns
+                  input(type="email", placeholder="Your E-mail").radius
+                .small-12.medium-3.large-3.columns
+                  input(type="text", placeholder="Phone Number").radius
+                .small-12.medium-3.large-3.columns
+                  input(type="submit", value="Get started").button-two.radius
+    // Finish Header
+    // Start Explore
+    section.full-row.full-padding#explore
+      .row
+        .small-12.medium-6.large-6.columns
+          img(src="images/browsers.png", alt="Application").box-ed-image
+        .small-12.medium-6.large-6.columns
+          .box-ed
+            h2.box-ed-header Explore the awesomeness
+            div.box-ed-tiny-line
+            h3.box-ed-s-header Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            .row.collapse
+              .small-2.columns
+                span.box-ed-icon
+                  i.icon_cog
+              .small-10.columns
+                h4.box-ed-ss-header Easy to Customize
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.
+            .row.collapse
+              .small-2.columns
+                span.box-ed-icon
+                  i.icon_drive
+              .small-10.columns
+                h4.box-ed-ss-header Easy to Customize
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.
+    // Finish Explore
+    // Start Describe
+    section.full-row.full-padding.full-gray#describe
+      .row
+        .small-12.medium-6.large-6.columns
+          .box-ed
+            h2.box-ed-header Describe more about product
+            div.box-ed-tiny-line
+            h3.box-ed-s-header Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+            .row.collapse
+              .small-2.columns
+                span.box-ed-icon
+                  i.icon_cog
+              .small-10.columns
+                h4.box-ed-ss-header Easy to Customize
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.
+            .row.collapse
+              .small-2.columns
+                span.box-ed-icon
+                  i.icon_drive
+              .small-10.columns
+                h4.box-ed-ss-header Easy to Customize
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.
+        .small-12.medium-6.large-6.columns
+          img(src="images/browsers.png", alt="Application").box-ed-image
+    // Finish Describe
+    // Start Features
+    section.full-row.full-padding#features
+      .row
+        .small-12.medium-12.large-12.columns.text-center
+          h2.f-header LandX Features
+          div.f-tiny-line 
+          p Term sheet convertible note colluding bootstrapping.
+        .small-12.medium-12.large-12.columns
+          .row
+            .small-12.medium-4.columns.text-center
+              .f-box
+                .f-icon
+                  i.icon_compass_alt
+                h3.f-sub-header Responsive Design
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+            .small-12.medium-4.columns.text-center
+              .f-box
+                .f-icon
+                  i.icon_map_alt
+                h3.f-sub-header 350+ Font Icons
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+            .small-12.medium-4.columns.text-center
+              .f-box
+                .f-icon
+                  i.icon_gift_alt
+                h3.f-sub-header Built with Foundation
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+            .small-12.medium-4.columns.text-center
+              .f-box
+                .f-icon
+                  i.icon_adjust-vert
+                h3.f-sub-header Easy to Customize
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+            .small-12.medium-4.columns.text-center
+              .f-box
+                .f-icon
+                  i.icon_tags_alt
+                h3.f-sub-header Lots of Variations
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+            .small-12.medium-4.columns.text-center
+              .f-box
+                .f-icon
+                  i.icon_chat_alt
+                h3.f-sub-header 24/7 Chat Support
+                p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+    // Finish Features
+    // Start Pricing
+    section.full-row.full-padding.full-gray#pricing
+      .row
+        .small-12.medium-12.large-12.columns.text-center
+          h2.f-header Pricing Tables
+          div.f-tiny-line 
+          p Term sheet convertible note colluding bootstrapping.
+        .small-12.medium-12.large-12.columns
+          .row
+            .small-12.medium-4.large-4.columns
+              .pricing.full-block.black
+                header.p-header.text-center
+                  h3 Basic
+                  p From 
+                    span $39
+                    |  per month
+                ul.p-list
+                  li
+                    .p-small-10
+                      p Total Users
+                    .p-small-2
+                      span 15
+                  li
+                    .p-small-10
+                      p Unlimited Styles
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Advance Protection
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Cloud Storage
+                    .p-small-2
+                      span.icon_close
+                  li
+                    .p-small-10
+                      p 24/7 Customer Service
+                    .p-small-2
+                      span.icon_close
+                  li
+                    .p-small-10
+                      p Backup Service
+                    .p-small-2
+                      span.icon_close
+                footer.p-footer
+                  .p-small-7
+                    p $39 per Month 
+                  .p-small-5
+                    a(href="#").button-one.radius.expanded Sign up
+              // .pricing
+            .small-12.medium-4.large-4.columns
+              .pricing.full-block.blue
+                header.p-header.text-center
+                  h3 Premium
+                  p From 
+                    span $199
+                    |  per month
+                ul.p-list
+                  li
+                    .p-small-10
+                      p Total Users
+                    .p-small-2
+                      span 35
+                  li
+                    .p-small-10
+                      p Unlimited Styles
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Advance Protection
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Cloud Storage
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p 24/7 Customer Service
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Backup Service
+                    .p-small-2
+                      span.icon_close
+                footer.p-footer
+                  .p-small-7
+                    p $199 per Month 
+                  .p-small-5
+                    a(href="#").button-two.radius.expanded Sign up
+              // .pricing
+            .small-12.medium-4.large-4.columns
+              .pricing.full-block.black
+                header.p-header.text-center
+                  h3 Ultimate
+                  p From 
+                    span $299
+                    |  per month
+                ul.p-list
+                  li
+                    .p-small-10
+                      p Total Users
+                    .p-small-2
+                      span 60
+                  li
+                    .p-small-10
+                      p Unlimited Styles
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Advance Protection
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Cloud Storage
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p 24/7 Customer Service
+                    .p-small-2
+                      span.icon_check
+                  li
+                    .p-small-10
+                      p Backup Service
+                    .p-small-2
+                      span.icon_check
+                footer.p-footer
+                  .p-small-7
+                    p $299 per Month 
+                  .p-small-5
+                    a(href="#").button-one.radius.expanded Sign up
+              // .pricing 
+    // Finish Pricing
+    // Start Video
+    section.full-row.full-padding#video
+      .row
+        .small-12.medium-12.large-12.columns.text-center
+          h2.f-header Watch Video
+          div.f-tiny-line 
+          p Term sheet convertible note colluding bootstrapping.
+        .small-12.columns
+          .flex-video.widescreen.vimeo
+            iframe(src="//player.vimeo.com/video/60122989", width="500",height="281",frameborder="0",webkitallowfullscreen, mozallowfullscreen,allowfullscreen)
+        .small-12.columns
+          .row
+            .small-12.medium-4.columns.text-center
+              h5.video-feature 
+                i.icon_star_alt
+                | Trusted by 100+ users
+            .small-12.medium-4.columns.text-center
+              h5.video-feature 
+                i.icon_globe
+                |WorldWide Access
+            .small-12.medium-4.columns.text-center
+              h5.video-feature  
+                i.icon_mail_alt
+                | 24/7 Chat Support
+    // Finish Video
+    // Start Product
+    section.full-row.full-padding.full-gray#product
+      .row
+        .small-12.medium-12.large-12.columns.text-center
+          h2.f-header Product Screenshots
+          div.f-tiny-line 
+          p Term sheet convertible note colluding bootstrapping.
+        .small-12.columns
+          #slider
+            div.slide
+              img(src="images/screenshots/1.jpg", alt="")
+            div.slide
+              img(src="images/screenshots/2.jpg", alt="")
+            div.slide
+              img(src="images/screenshots/3.jpg", alt="")
+            div.slide
+              img(src="images/screenshots/4.jpg", alt="")
+    // Finish Product
+    // Start Trusted
+    section.full-row.full-padding#trusted
+      .row
+        .small-12.medium-12.large-12.columns.text-center
+          h2.f-header Trusted by Thousands
+          div.f-tiny-line 
+          p Term sheet convertible note colluding bootstrapping.
+        .small-12.medium-2.columns
+        .small-12.medium-8.medium-offset-2.columns
+          ul#trusted-logo
+            li
+              a(href="#")
+                img(src="images/clients/mashable.png", alt="")
+            li
+              a(href="#")
+                img(src="images/clients/national.png", alt="")
+            li
+              a(href="#")
+                img(src="images/clients/vogue.png", alt="")
+            li
+              a(href="#")
+                img(src="images/clients/tnw.png", alt="")
+        .small-12.medium-2.columns
+        .small-12.medium-12.columns
+          #trusted-clients
+            .tc-author
+              .tc-photo
+                i.icon_chat_alt
+              .tc-box
+                p.tc-message  Lorem lean startup ipsum product market fit customer 
+                  | development acquihire technical cofounder. User engagement A/B 
+                  | testing shrink a market venture capital pitch deck. Social 
+                  | bookmarking group buying crowded market pivot onboarding.
+              .tc-data
+                  h5.tc-name Willeke Hoekstra
+                  p.tc-company AbZ Network
+            .tc-author
+              .tc-photo
+                i.icon_chat_alt
+              .tc-box
+                p.tc-message  Lorem lean startup ipsum product market fit customer 
+                  | development acquihire technical cofounder. User engagement A/B 
+                  | testing shrink a market venture capital pitch deck. Social 
+                  | bookmarking group buying crowded market pivot onboarding.
+              .tc-data
+                  h5.tc-name Răducu Neamțu
+                  p.tc-company AbZ Network
+            .tc-author
+              .tc-photo
+                i.icon_chat_alt
+              .tc-box
+                p.tc-message  Lorem lean startup ipsum product market fit customer 
+                  | development acquihire technical cofounder. User engagement A/B 
+                  | testing shrink a market venture capital pitch deck. Social 
+                  | bookmarking group buying crowded market pivot onboarding.
+              .tc-data
+                  h5.tc-name Markel Díaz
+                  p.tc-company AbZ Network
+            .tc-author
+              .tc-photo
+                i.icon_chat_alt
+              .tc-box
+                p.tc-message  Lorem lean startup ipsum product market fit customer 
+                  | development acquihire technical cofounder. User engagement A/B 
+                  | testing shrink a market venture capital pitch deck. Social 
+                  | bookmarking group buying crowded market pivot onboarding.
+              .tc-data
+                  h5.tc-name Willeke Bruska
+                  p.tc-company AbZ Network      
+    // Finish Trusted
+    // Start Start-now
+    section.full-row#start-now
+      .color-hover.full-block.full-padding
+        .row
+          .small-12.columns.text-center
+            p#sn-small-header We Are Ready to Help You
+            h5#sn-big-header Get the Best Solution for Your Business
+          .small-12.columns.text-center
+            a(href="#").button-two.radius Get Started
+              i.arrow_right
+    // Finish Start-now
+    // Start Questions
+    section.full-row.full-padding#questions
+      .row
+        .small-12.columns.text-center
+          h5.q-header Need any help? Contact us now!
+          a(href="#").q-contact
+            i.icon_mail
+            | Contact us now
+    // Finish Questions
+    // Start Footer 
+    footer.full-row.full-padding.full-gray#footer
+      .row
+        .small-12.columns.text-center
+          #f-logo
+            a(href="#")
+              img(src="images/logo-dark.png", alt="Logo")
+          p.f-rights ©2014 LandX Template LLC.
+          ul#bottom-social-icons
+            li
+              a(href="#")
+                i.social_facebook_square
+            li
+              a(href="#")
+                i.social_twitter_square
+            li
+              a(href="#")
+                i.social_pinterest_square
+            li
+              a(href="#")
+                i.social_googleplus_square
+            li
+              a(href="#")
+                i.social_instagram_square
+            li
+              a(href="#")
+                i.social_linkedin_square
+
+    // End Footer 
+    // Don't forget to concatenate and minify javascript in a single file when moved to production
+    script(src="js/jquery.min.js")
+    script(src="js/smooth-scroll.min.js")
+    script(src="js/foundation.min.js")
+    script(src="js/owl.carousel.min.js")
+    script(src="js/headroom.min.js")
+    script(src="js/main.js")
