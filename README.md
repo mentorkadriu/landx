@@ -39,6 +39,6 @@
 
 [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll.git)
 
-#### Full image
+#### Full image .
 
 ![](https://github.com/mentorkadriu/Landx/blob/master/Landx.jpg "Landx - Landing App page")
