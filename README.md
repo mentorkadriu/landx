@@ -1,2 +1,0 @@
-# landx
-landx - Landing page
