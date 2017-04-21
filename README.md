@@ -1,5 +1,5 @@
 
-![](https://github.com/mentorkadriu/landx/blob/master/Landx-browser.jpg "App landing page")
+![](https://github.com/mentorkadriu/projects.landx.github.io/blob/master/landx-browser.png "App landing page")
 
 ## Install ##
 
@@ -41,4 +41,4 @@
 
 #### Full image .
 
-![](https://github.com/mentorkadriu/Landx/blob/master/Landx.jpg "Landx - Landing App page")
+![](https://github.com/mentorkadriu/projects.landx.github.io/blob/master/landx.png "Landx - Landing App page")
