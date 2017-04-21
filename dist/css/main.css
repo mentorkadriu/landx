@@ -43,10 +43,13 @@ meta.foundation-data-attribute-namespace {
 html, body {
   height: 100%; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   font-size: 100%; }
 
 body {
@@ -71,7 +74,12 @@ img {
 img {
   -ms-interpolation-mode: bicubic; }
 
-#map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object {
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
   max-width: none !important; }
 
 .left {
@@ -83,6 +91,7 @@ img {
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
+
 .clearfix:after {
   clear: both; }
 
@@ -290,7 +299,7 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-@media only screen and (min-width:40.063em) {
+@media only screen and (min-width: 40.063em) {
   button, .button {
     display: inline-block; } }
 
@@ -411,12 +420,10 @@ Designed By: Mentor Kadriu
 
 .headroom--unpinned {
   opacity: 1;
-  -webkit-transform: translateY(0);
   transform: translateY(0); }
 
 .headroom--pinned {
   opacity: 0;
-  -webkit-transform: translateY(-100%);
   transform: translateY(-100%); }
 
 .headroom--fixed {
@@ -448,7 +455,7 @@ Designed By: Mentor Kadriu
 
 #logo {
   margin-bottom: 1rem; }
-  @media only screen and (min-width:40.063em) {
+  @media only screen and (min-width: 40.063em) {
     #logo {
       margin-bottom: 0; } }
 
@@ -471,7 +478,7 @@ ul#social-icons {
 #bottom-header {
   padding-top: 3rem;
   padding-bottom: 3rem; }
-  @media only screen and (min-width:40.063em) {
+  @media only screen and (min-width: 40.063em) {
     #bottom-header {
       padding-top: 10.313rem;
       padding-bottom: 10.313rem; } }
@@ -719,7 +726,6 @@ ul#social-icons {
       position: absolute;
       top: 100%;
       left: 50%;
-      -webkit-transform: translateX(-15px);
       transform: translateX(-15px);
       background-color: #fff; }
   .tc-author .tc-data {
